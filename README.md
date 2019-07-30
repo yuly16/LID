@@ -17,9 +17,9 @@ python utils/data_preparation.py --base_path DATA_DIR --kaldi_path KALDI_PATH
     * 我们的程序需要用到kaldi语音工具箱。如果没有安装，请先安装kaldi。上面命令的`KALDI_PATH`为`kaldi/egs/sre16/v2`所在的绝对目录，例如`/mnt/workspace2/yuly/kaldi/egs/sre16/v2`
     * 示例：
     ```
-    python utils/data_preparation.py --base_path '/home/yuly/LID/LID_data' --kaldi_path '/mnt/workspace2/yuly/kaldi/egs/sre16/v2
+    python utils/data_preparation.py --base_path '/home/yuly/LID/LID_data' --kaldi_path '/mnt/workspace2/yuly/kaldi/egs/sre16/v2'
     ```
-    * 可以看到训练数据文件夹为`dataset_train`，测试数据文件夹为`dataset_test`。
+    * 程序运行完之后，可以看到训练数据文件夹为`dataset_train`，测试数据文件夹为`dataset_test`。
 ### 2) 训练网络
 ```
         python train.py --batch_size 512 --epoches 40 --train_dir TRAIN_DIR --test_dir TEST_DIR --is_gpu True
